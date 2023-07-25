@@ -73,8 +73,8 @@ const SkillItem = styled.div`
   box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
   background-image: linear-gradient(144deg, #af40ff, #5b42f3 50%, #da4ea2);
   opacity: 0;
-  animation: ${({ isVisible }) =>
-    isVisible ? fadeIn : "none"} 0.8s ease-in-out forwards;
+  animation: ${({ isVisible }) => (isVisible ? fadeIn : "none")} 0.8s
+    ease-in-out forwards;
   animation-delay: ${({ delay }) => delay}s;
 
   @media only screen and (max-width: 768px) {
@@ -195,21 +195,20 @@ const SkillsMobile = styled.div`
 const SkillsData = [
   { name: "JavaScript", src: "./img/javascript.png" },
   { name: "Python", src: "./img/python.png" },
-  { name: "C", src: "./img/c.png" },
+  // { name: "C", src: "./img/c.png" },
   { name: "Linux", src: "./img/linux.png" },
   { name: "Docker", src: "./img/docker.png" },
   { name: "Git", src: "./img/git.png" },
   { name: "MongoDB", src: "./img/mongodb.png" },
   { name: "Node.js", src: "./img/nodejs.png" },
   { name: "PostgreSQL", src: "./img/psql.png" },
-  { name: "Flask", src: "./img/flask.png" },
+  // { name: "Flask", src: "./img/flask.png" },
   { name: "HTML", src: "./img/html.png" },
   { name: "CSS", src: "./img/css.png" },
   { name: "React.js", src: "./img/reactjs.png" },
   { name: "Three.js", src: "./img/three.png" },
   { name: "Tailwind", src: "./img/tailwind.png" },
 ];
-
 
 const Who = ({ handleClick }) => {
   const handleButtonClick = () => {
@@ -246,11 +245,7 @@ const Who = ({ handleClick }) => {
           <SkillsMobile>Technologies</SkillsMobile>
           <SkillsContainer>
             {SkillsData.map((skill, index) => (
-              <SkillItem
-                key={index}
-                isVisible={isVisible}
-                delay={index * 0.1}
-              >
+              <SkillItem key={index} isVisible={isVisible} delay={index * 0.1}>
                 <Box>
                   <img src={skill.src} alt={skill.name} />
                   <Name>{skill.name}</Name>
@@ -281,4 +276,3 @@ const Who = ({ handleClick }) => {
 };
 
 export default Who;
-
