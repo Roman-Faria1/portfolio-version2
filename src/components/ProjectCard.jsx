@@ -197,7 +197,7 @@ const projectData = [
   {
     id: "ds-visualizer",
     src: "./img/pageturner_login.PNG",
-    deployed: "https://pageturnersreviews.onrender.com",
+    deployed: "https://pageturners-book-reviews.netlify.app/",
     code: "https://github.com/Roman-Faria1/PageTurners-FrontEnd",
     projectTitle: "PageTurners Reviews",
     projectDescription:
