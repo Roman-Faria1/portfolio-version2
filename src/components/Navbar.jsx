@@ -206,7 +206,7 @@ const Navbar = ({ activeLink, handleClick }) => {
           </ListItemMobile>
         </Links>
         <Icons>
-          <Button href="./img/RF-DevResume-2.pdf" target="_blank">
+          <Button href="./img/RF-IT-Resume-2024-2.pdf" target="_blank">
             Resume <img src="./img/download.png" alt="" />
           </Button>
           <Icon src="./img/menu.png" onClick={handleMenuToggle}></Icon>
